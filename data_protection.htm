@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html ng-app="nightlightApp" ng-controller="indexCtrl" charset="utf-8">
+
+  <head>
+		
+    <title> NightLights | Lights in Darkness </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Drawings of lightful visions born in darkness, considered as gifts from the unconscious."/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width">
+    <script src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/indexModule.js"></script>
+    <script type="text/javascript" src="js/functionModule.js"></script>
+    <link rel="stylesheet" media="all" type="text/css" href="styleSheets/style.css" />
+	  
+  </head>
+	  
+
+  <body ng-controller="menuCtrl">
+  	
+    <div id="mobileMenu" 
+  			ng-mouseenter="showLinkList=true">MENU</div> 
+  		<div class="linkListBackground"></div> 
+	    
+		<div class="linkList"
+			ng-show="showLinkList"
+			ng-mouseleave="showLinkList=hideLinkList()">
+		    <div class="Link">
+			   <a href="index.htm" title="Startseite"> 
+			   		NightLights 
+			   </a>
+			</div>
+
+			<div class="Link">
+		   	   <a href="night.htm" title=""> 	
+		   	   		Night 
+		   	   </a>
+		   	</div>
+
+		    <div class="Link">
+		   	   <a href="impressum.htm" title=""> 	
+		   	   		Impressum 
+		   	   </a>
+		   	</div>
+
+		   	<div class="Link">
+		   	   <a href="data_protection.htm" title="" class="activeLink"> 	
+		   	   		Data Protection 
+		   	   </a>
+		   	</div>
+		</div><link-list></link-list>
+		   		
+		<div class="centered">
+
+	
+			<div id="impressumText">
+
+				<h2>Die verantwortliche Stelle für die Datenverarbeitung </h2>
+
+				Xenia Bogomolec<br />
+				Engelbosteler Damm 15<br>
+				30167 Hannover (D)<br>
+				E-Mail: <a class="textLink" href="mailto:indigomind@protonmail.ch">indigomind@protonmail.ch</a><br><br>
+				
+
+				<h2>Datenschutzhinweise</h2>
+
+				<h3>Datenerfassung auf unserer Website</h3>
+
+				<p class="question"><strong>Wer ist verantwortlich für die Datenerfassung auf dieser Website?</strong></p>
+
+				<p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber Xenia Bogomolec.</p>
+
+				<p class="question"><strong>Wie erfassen wir Ihre Daten?</strong></p>
+
+				<p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie per Email senden. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z.B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie unsere Website betreten.</p>
+
+				<p class="question"><strong>Wofür nutzen wir Ihre Daten?</strong></p>
+
+				Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten.
+
+				<p class="question"><strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong></p>
+
+				Sie haben jederzeit das Recht unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung, Sperrung oder Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden. Des Weiteren steht Ihnen ein Beschwerderecht bei einer Aufsichtsbehörde zu
+
+				<h2>Datenschutz</h2>
+
+				<p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.	
+				<br>
+				Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.
+				<br>
+				Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.</p>
+
+				<p class="question"><strong>Hinweis zur verantwortlichen Stelle</strong></p>
+
+				<p>Die verantwortliche Stelle für die Datenverarbeitung ist Xenia Bogomolec
+				<br>
+				Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
+
+				<p class="question"><strong>Hinweis Datenschutzbeauftragter</strong></p>
+
+				<p>Ein Datenschutzbeauftragter ist nicht bestellt. Es besteht für mich keine Pflicht einen Datenschutzbeauftragten zu bestellen.</p>
+
+				<p class="question"><strong>Widerruf Ihrer Einwilligung zur Datenverarbeitung</strong></p>
+
+				<p>Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine formlose Mitteilung per E-Mail an uns. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.</p>
+
+				<p class="question"><strong>Beschwerderecht bei der Aufsichtsbehörde</strong></p>
+
+				Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde zu. Eine Liste der Aufsichtsbehörden sowie deren Kontaktdaten können folgendem Link entnommen werden: https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html.
+
+				<p class="question"><strong>Recht auf Datenübertragbarkeit</strong></p>
+
+				<p>Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist.</p>
+
+				<!--<p><strong>SSL- bzw. TLS-Verschlüsselung</strong></p>
+
+				Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL-bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von “http://” auf “https://” wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.-->
+
+				<p class="question"><strong>Auskunft, Sperrung, Löschung</strong></p>
+
+				<p>Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit unter der im Impressum angegebenen Adresse an uns wenden.</p>
+
+				<h3>Datenerfassung auf unserer Website</h3>
+
+				<!--Cookies
+
+				Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert.
+
+				Die meisten der von uns verwendeten Cookies sind so genannte “Session-Cookies”. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Andere Cookies bleiben auf Ihrem Endgerät gespeichert bis Sie diese löschen. Diese Cookies ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen.
+
+				Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren. Bei der Deaktivierung von Cookies kann die Funktionalität dieser Website eingeschränkt sein.
+
+				Cookies, die zur Durchführung des elektronischen Kommunikationsvorgangs, werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO gespeichert. Der Websitebetreiber hat ein berechtigtes Interesse an der Speicherung von Cookies zur technisch fehlerfreien und optimierten Bereitstellung seiner Dienste.-->
+
+				<p class="question"><strong>Server-Log-Dateien</strong></p>
+
+				<p>Der Provider** dieser Seite erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>
+
+    			<p>
+    				<ul>
+					    <li class="server_logs">die IP-Adresse des anfragenden Endgerätes</li>
+					    <li class="server_logs">Datum und Uhrzeit des Aufrufs unserer Webseiten</li>
+					    <li class="server_logs">Angabe der Zeitverschiebung zwischen anfragendem Host und Webserver</li>
+					    <li class="server_logs">Inhalt zur Anfrage bzw. Angabe der abgerufenen Datei, die an den Nutzer übermittelt wurde
+					    der Zugriffsstatus (erfolgreiche Übermittlung, Fehler etc.)</li>
+					    <li class="server_logs">die jeweils übertragene Datenmenge in Byte,
+					    die Webseite, von der aus der Zugriff des Nutzers erfolgt ist</li>
+					    <li class="server_logs">der durch den Nutzer verwendeter Browser</li> 
+					    <li class="server_logs">das Betriebssystem</li> 
+					    <li class="server_logs">die Oberfläche</li> 
+					    <li class="server_logs">die Sprache des Browsers</li> 
+					    <li class="server_logs">die Version der Browsersoftware</li>
+    				</ul>
+    			</p>
+
+				<p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+				<br>
+				Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
+
+				<p>
+					** all-inkl.com
+				</p>
+
+				<!--<p><strong>Kontaktformular</strong></p>
+
+				Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.
+
+				Die Verarbeitung der in das Kontaktformular eingegebenen Daten erfolgt somit ausschließlich auf Grundlage Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
+
+				Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern oder der Zweck für die Datenspeicherung entfällt (z.B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.-->
+
+				<p class="question"><strong>Datenübermittlung bei Vertragsschluss für Dienstleistungen und digitale Inhalte</strong></p>
+
+				<p>Wir übermitteln personenbezogene Daten an Dritte nur dann, wenn dies im Rahmen der Vertragsabwicklung notwendig ist, etwa an das mit der Zahlungsabwicklung beauftragte Kreditinstitut.
+				<br>
+				Eine weitergehende Übermittlung der Daten erfolgt nicht bzw. nur dann, wenn Sie der Übermittlung ausdrücklich zugestimmt haben. Eine Weitergabe Ihrer Daten an Dritte ohne ausdrückliche Einwilligung, etwa zu Zwecken der Werbung, erfolgt nicht.
+				<br>
+				Grundlage für die Datenverarbeitung ist Art. 6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung eines Vertrags oder vorvertraglicher Maßnahmen gestattet.</p>
+
+				<!--<p class="question"><strong>Google Web Fonts</strong></p>
+
+				<p>Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Web Fonts, die von Google bereitgestellt werden. Beim Aufruf einer Seite lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.</p>
+
+				<p>Zu diesem Zweck muss der von Ihnen verwendete Browser Verbindung zu den Servern von Google aufnehmen. Hierdurch erlangt Google Kenntnis darüber, dass über Ihre IP-Adresse unsere Website aufgerufen wurde. Die Nutzung von Google Web Fonts erfolgt im Interesse einer einheitlichen und ansprechenden Darstellung unserer Online-Angebote. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.</p>
+
+				<p>Wenn Ihr Browser Web Fonts nicht unterstützt, wird eine Standardschrift von Ihrem Computer genutzt.</p>
+
+				<p>Weitere Informationen zu Google Web Fonts finden Sie unter https://developers.google.com/fonts/faq und in der Datenschutzerklärung von Google: https://www.google.com/policies/privacy/.</p>
+
+				<p>Das angemessene Datenschuztniveau in den USA seitens Google wird durch deren Teilnahme am Privacy Shield erreicht.</p>-->
+
+				<p>Stand 31.Mai 2018 
+					<a class="textLink" href="http://nightlights.tjingwan.com">nightlights.tjingwan.com</a>
+				</p>
+
+				<br><br><br>
+
+			</div>
+		</div>
+	
+  </body>
+
+</html>
+

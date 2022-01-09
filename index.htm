@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html ng-app="nightlightApp" ng-controller="indexCtrl" charset="utf-8">
+
+  <head>
+		
+    <title> NightLights | Lights in Darkness </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Drawings of lightful visions born in darkness, considered as gifts from the unconscious."/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="width=device-width">
+    <script src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/indexModule.js"></script>
+    <script type="text/javascript" src="js/functionModule.js"></script>
+    <link rel="stylesheet" media="all" type="text/css" href="styleSheets/style.css" />
+	  
+  </head>
+	  
+
+  <body ng-controller="menuCtrl">
+
+  		<div id="mobileMenu" 
+  			ng-mouseenter="showLinkList=true">MENU</div> 
+  		<div class="linkListBackground"></div> 
+	    
+		<div class="linkList"
+			ng-show="showLinkList"
+			ng-mouseleave="showLinkList=hideLinkList()">
+		    <div class="Link">
+			   <a href="index.htm" title="Startseite" class="activeLink"> 
+			   		NightLights 
+			   </a>
+			</div>
+
+			<div class="Link">
+		   	   <a href="night.htm" title=""> 	
+		   	   		Night 
+		   	   </a>
+		   	</div>
+
+		    <div class="Link">
+		   	   <a href="impressum.htm" title=""> 	
+		   	   		Impressum 
+		   	   </a>
+		   	</div>
+
+		   	<div class="Link">
+		   	   <a href="data_protection.htm" title=""> 	
+		   	   		Data Protection 
+		   	   </a>
+		   	</div>
+		</div>
+			
+			
+		   		
+		<div class="centered" ng-controller="functionCtrl">
+
+			<a href="index.htm" class="leftLogo">
+				<h1>NightLights</h1>
+			</a><br>
+
+			<div class="pictureList">
+	
+				<div class="overView" ng-repeat="pic in pictureList">
+					<img ng-class="{'thumbnail0': pic.position == 1,
+					 'thumbnail': pic.position > 1}"
+					src="images/Thumbnails/{{pic.name}}" 
+					ng-click="showPic(pic)"/>
+
+					<div class="bigPicDiv" ng-show="pic.showBigPic">
+
+						<img class="left" src="images/left.png"
+							ng-click="showNextPic(-1, pic)"
+							ng-show="goLeft"/>
+
+						<span class="Centerer"></span>
+
+						<img class="bigPic" ng-click="hidePic(pic)"
+							src="images/{{pic.folder}}/{{pic.name}}"
+							oncontextmenu="javascript:alert('Copyright by Alexander Tjingwan Heß, don't save it!');return false;"/>
+
+						<img class="right" src="images/right.png"
+							ng-click="showNextPic(1, pic)"
+							ng-show="goRight"/>
+
+						<img src="images/close.png" class="close" title="zurück zur Übersicht" 
+							ng-click="hidePic(pic)"/>
+					</div>
+				</div>
+			</div>
+			<div id=copyright>copyright @ Xenia Bogomolec, Hannover</div>
+		</div>	
+	
+  </body>
+
+</html>
+
