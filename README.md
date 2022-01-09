@@ -9,3 +9,5 @@ Also check out:
 * https://docs.angularjs.org/misc/version-support-status
 * https://blog.angular.io/finding-a-path-forward-with-angularjs-7e186fdd4429
 * https://angular.io/
+
+![](images/Scans/DSC_0390.jpg)
