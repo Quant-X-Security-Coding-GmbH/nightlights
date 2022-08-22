@@ -1,0 +1,33 @@
+<body>
+  		<div id="mobileMenu"
+  			(mouseenter)="showLinkList=true">MENU</div>
+  		<div class="linkListBackground"></div>
+
+		<div class="linkList"
+			[hidden]="!showLinkList"
+			(mouseleave)="showLinkList=hideLinkList()">
+		    <div class="Link">
+			   <a routerLink="/" title="Startseite" class="activeLink">
+			   		NightLights
+			   </a>
+			</div>
+
+			<div class="Link">
+		   	   <a routerLink="/night"> Night
+		   	   </a>
+		   	</div>
+
+		    <div class="Link">
+		   	   <a routerLink="/impressum">
+		   	   		Impressum
+		   	   </a>
+		   	</div>
+
+		   	<div class="Link">
+		   	   <a routerLink="/data_protection">
+		   	   		Data Protection
+		   	   </a>
+		   	</div>
+		</div>
+</body>
+<router-outlet></router-outlet>

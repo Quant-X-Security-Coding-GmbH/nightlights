@@ -1,0 +1,46 @@
+
+<body (contextmenu)="noSave()">
+
+    <div class="centered">
+
+			<a href="#" class="leftLogo">
+				<h1>NightLights</h1>
+			</a><br>
+
+			<div class="pictureList">
+				<div class="overView" *ngFor="let pic of pictureList">
+					<img [class]="{'thumbnail0': pic.position == 1,
+					 'thumbnail': pic.position > 1}"
+           src="../../../assets/images/Thumbnails/{{pic.name}}"
+					 (click)="showPic(pic)"
+          />
+
+          <div class="bigPicDiv" *ngIf="showBigPic" >
+
+						<img class="left" src="../../../assets/images/left.png"
+							(click)="showNextPic(-1, bigPicture)"
+							*ngIf="goLeft"/>
+
+						<span class="Centerer"></span>
+
+						<img class="bigPic" (click)="hidePic()"
+							src="../../../assets/images/Scans/{{bigPicture.name}}"
+							oncontextmenu="alert('Copyright by Alexander Tjingwan Heß, don\'t save it!');return false;"
+              (keydown)="onKeyDown($event)"
+            />
+
+						<img class="right" src="../../../assets/images/right.png"
+							(click)="showNextPic(1, bigPicture)"
+							*ngIf="goRight"/>
+
+						<img src="../../../assets/images/close.png" class="close" title="zurück zur Übersicht"
+                 (click)="hidePic()"/>
+					</div>
+        </div>
+      </div>
+      <div id=copyright>copyright @ Xenia Bogomolec, Hannover</div>
+    </div>
+  </body>
+
+
+
