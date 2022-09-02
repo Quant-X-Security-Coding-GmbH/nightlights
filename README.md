@@ -1,6 +1,10 @@
 # Nightlights
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
+## Purpose
+
+Nightlights is a simple webpage for the presentation of images. It is an open source project of [Quant-X Security & Coding](https://quant-x-sec.com/) to demonstrate the migration of AngularJS to Angular, caused by the end of life of AngularJS end of 2021. 
+
+The current version of this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.7.
 
 ## Development server
 
