@@ -21,9 +21,9 @@ import {lines} from "../../night-sentences";
           [
             style({ opacity: 0 }),
             stagger(
-              '10s',
+              '3s',
               [animate('100ms', style({ opacity: 1} )),
-              animate('10s ease-out', style({ opacity: 0.08} ))],
+              animate('3s ease-out', style({ opacity: 0.08} ))],
             )],
           { optional: true }
         )
