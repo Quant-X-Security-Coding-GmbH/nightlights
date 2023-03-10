@@ -22,6 +22,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## Selenium Testing
+
+To execute the build-in selenium tests move to the directory `seleniumTest` and use `node MainPage`, or the name of a different file containing tests. For more information check out our [Selenium testing guide](https://quant-x-sec.atlassian.net/wiki/spaces/EN/pages/38830081/Selenium+Tests). 
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
